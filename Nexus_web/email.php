@@ -19,7 +19,7 @@ $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
 
 // Send the email
-$recipientEmail = "recipient@example.com"; // Replace with the recipient's email address
+$recipientEmail = "nuruzadeomar3@gmail.com"; // Replace with the recipient's email address
 $mailSent = mail($recipientEmail, $subject, $body, $headers);
 
 // Check if the email was sent successfully
