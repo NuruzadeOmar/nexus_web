@@ -1,0 +1,641 @@
+.logo {
+  width: 200px;
+}
+
+.navButton {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.sticky {
+  position: fixed !important;
+  top: -105px !important;
+  width: 100% !important;
+  background-color: white !important;
+  padding-bottom: 20px !important;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2) !important;
+}
+
+.stickyShow {
+  top: 0 !important;
+  transition: all 0.5s;
+  z-index: 9999 !important;
+}
+
+.sticky .link {
+  color: black !important;
+}
+
+svg:hover g {
+  fill: blue;
+}
+
+.link {
+  font-size: 20px !important;
+  margin: 0 10px !important;
+  max-width: 100% !important;
+  position: relative !important;
+  padding-bottom: 3px !important;
+}
+
+.link,
+.link:after,
+.link:before {
+  transition: all 0.3s;
+}
+
+.link:after {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: auto !important;
+  width: 0% !important;
+  content: '.' !important;
+  color: transparent !important;
+  background: #aaa !important;
+  height: 1px !important;
+}
+.link:hover:after {
+  width: 100% !important;
+}
+
+.link:after {
+  text-align: left !important;
+  content: '.' !important;
+  margin: 0 !important;
+  opacity: 0 !important;
+}
+.linkSticky:hover {
+  color: #344767 !important;
+  z-index: 1 !important;
+}
+
+.linkSticky:after {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: auto !important;
+  width: 0% !important;
+  content: '.' !important;
+  color: transparent !important;
+  background: #344767 !important;
+  height: 1px !important;
+}
+
+.link:hover:after {
+  z-index: -10 !important;
+  animation: fill 1s forwards !important;
+  -webkit-animation: fill 1s forwards !important;
+  -moz-animation: fill 1s forwards !important;
+  opacity: 1 !important;
+}
+
+.navContainer {
+  margin-top: 20px !important;
+  max-width: 1700px !important;
+  z-index: 9999;
+}
+
+.title {
+  font-size: 56px !important;
+}
+
+.consultation {
+  /* margin-left: 15px !important; */
+  font-size: 16px !important;
+}
+
+.getStarted {
+  font-size: 16px !important;
+}
+
+#aboutBody {
+z-index: 999;
+}
+
+.aboutLogo {
+  width: 400px;
+  background-color: white;
+  padding: 60px 40px;
+}
+
+.aboutDescription {
+  margin-top: 25px !important;
+  font-size: 22px !important;
+  text-align: justify;
+
+}
+
+.blockquote {
+  border-left: none !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.quote {
+  font-size: 32px !important;
+}
+
+.quotesContainer {
+  max-width: 1700px !important;
+}
+
+.quoteContainer {
+  padding: 0 20px;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  margin: 0 auto !important;
+  height: 400px !important;
+}
+
+.quoteAuthor {
+  font-size: 22px !important;
+}
+
+.problemTitle {
+  text-align: center;
+}
+
+.solutionTitle {
+  font-size: 28px !important;
+}
+
+.solutionDescription {
+  font-size: 18px !important;
+}
+
+.solutionsContainer {
+  padding: 0 !important;
+  max-width: 1700px !important;
+}
+
+.solutionContainer {
+  padding-left: 3rem !important;  
+  padding-right: 2rem !important;  
+}
+
+@media screen and (max-width: 1200px) {
+  .solutionContainer {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-top: 0 !important;
+  }
+}
+
+.solutionTitleMargin {
+  text-align: center;
+  margin-bottom: 30px !important;
+}
+
+.productDescription {
+  font-size: 28px !important;
+}
+
+.productBullet {
+  padding: 32px !important;
+  padding-left: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.productContainer {
+  padding-top: 0 !important;
+  padding-left: 3rem !important;  
+  padding-right: 2rem !important;  
+}
+
+.productBullet:nth-child(1) {
+  padding-top: 0 !important;
+}
+
+.pricingCard {
+  border: none !important;
+  border-radius: 1rem !important;
+  transition: all 0.2s !important;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3) !important;
+  width: 100% !important;
+}
+
+/* .pricingCard *:not(.fa-circle) {
+  font-family: 'Montserrat', sans-serif;
+} */
+
+.pricing hr {
+  margin: 1.5rem 0 !important;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0 !important;
+  /* font-size: 32px !important; */
+  letter-spacing: 0.1rem !important;
+  /* font-weight: 600 !important; */
+  /* color: #000000 !important; */
+  /* font-family: 'Montserrat' !important; */
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 32px !important;
+  line-height: 39px !important;
+  /* identical to box height */
+
+  text-align: center !important;
+
+  color: #000000 !important;
+}
+
+.pricing .card-price {
+  font-size: 32px !important;
+  margin: 0 !important;
+  font-weight: 700;
+}
+
+.pricing .card-price .period {
+  /* font-family: 'Montserrat' !important; */
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 36px !important;
+  line-height: 44px !important;
+  text-align: center !important;
+
+  color: #000000 !important;
+}
+
+.pricing ul li {
+  margin-bottom: 40px !important;
+  font-size: 24px !important;
+  color: #000000 !important;
+  /* font-family: 'Montserrat' !important; */
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 24px !important;
+  line-height: 150% !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.pricing .btn {
+  font-size: 18px !important;
+  border-radius: 8px !important;
+  stroke: solid rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.1rem !important;
+  font-weight: bold !important;
+  padding: 18px 40px !important;
+  transition: all 0.2s !important;
+  background: #283e7c !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  border-radius: 8px !important;
+  width: fit-content !important;
+  margin: 0 auto !important;
+  margin-top: 40px !important;
+  color: #ffffff !important;
+}
+
+.pricingPackageTitle {
+  color: black;
+  font-weight: 500 !important;
+  font-size: 30px !important;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    margin-top: -0.25rem !important;
+    margin-bottom: 0.25rem !important;
+    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.3) !important;
+  }
+
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
+
+  .pricing .btn:hover {
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 102, 255, 0.3) !important;
+  }
+}
+
+.pricingCardBody {
+  padding: 24px !important;
+}
+
+.cardPrice {
+  padding-bottom: 10px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  /* font-family: 'Montserrat' !important; */
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 36px !important;
+  line-height: 44px !important;
+  text-align: center !important;
+
+  color: #000000 !important;
+}
+
+.fa-circle {
+  font-size: 10px !important;
+  color: #1A73E8 !important;
+}
+
+.pricingContainer {
+  max-width: 1700px !important;
+}
+
+.pricingTitle {
+  text-align: center !important;
+}
+
+.cardContainer {
+  margin: 0 20px !important;
+}
+
+.cardRow {
+  justify-content: center !important;
+}
+
+.includedTitle {
+  text-align: center;
+}
+
+.includedElementTitle {
+  font-size: 32px !important;
+}
+
+.includedElementDescription {
+  font-size: 22px !important;
+}
+
+.includedContainer {
+  max-width: 1700px !important;
+}
+
+.awardLogo {
+  height: 120px !important;
+  margin-bottom: 25px !important;
+}
+
+.actinspaceLogo {
+  height: 120px !important;
+  margin-bottom: 25px !important;
+}
+
+.awardsContainer {
+  max-width: 1700px !important;
+}
+
+.partnersContainer {
+  max-width: 1700px !important;
+}
+
+.partnerLogo {
+  object-fit: contain !important;
+  height: 200px !important;
+}
+
+.smallPartnerLogo {
+  height: 110px !important;
+}
+
+.euspaLogo {
+  height: 100px !important;
+}
+
+.euspaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ufazContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  font-size: 22px !important;
+}
+
+.input-group.input-group-dynamic .form-control,
+.input-group.input-group-dynamic .form-control:focus,
+.input-group.input-group-static .form-control,
+.input-group.input-group-static .form-control:focus {
+  background-image: linear-gradient(0deg, #344767 2px, rgba(156, 39, 176, 0) 0),
+    linear-gradient(0deg, #d2d2d2 1px, rgba(209, 209, 209, 0) 0) !important;
+}
+
+.submitBtn {
+  font-size: 22px !important;
+  background-color: #344767 !important;
+  color: white !important;
+}
+
+.submitBtn:hover {
+  box-shadow: 0 0.5rem 1rem 0 rgba(52, 71, 103, 0.3) !important;
+}
+
+.footerContainer {
+  position: relative;
+  top: -45px;
+}
+
+.footerText {
+  font-size: 22px !important;
+}
+
+.gradient-custom {
+  background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
+    linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
+    linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
+    radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
+    radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%);
+  background-blend-mode: screen, color-dodge, overlay, difference, normal;
+}
+.carousel-indicators {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.problemContainer {
+  max-width: 1700px !important;
+}
+
+.problemElement {
+  height: 100% !important;
+}
+
+.quoteTitle {
+  font-size: 32px !important;
+}
+
+.quoteDescription {
+  font-size: 22px !important;
+}
+
+.quoteReadMore {
+  font-size: 22px !important;
+  color: #1A73E8 !important;
+}
+
+.problemElement:hover {
+  box-shadow: 0 0.5rem 1rem 0 rgba(52, 71, 103, 0.3) !important;
+}
+
+.myIcon {
+  color: #1A73E8 !important;
+  font-size: 40px;
+}
+
+.myWhiteIcon {
+  color: white !important;
+  font-size: 30px !important;
+  background-color: #1A73E8 !important;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(26, 115, 232, 0.4) !important;
+  padding-top: 5px !important;
+}
+
+.productTitleMargin{
+  text-align: center;
+  margin-bottom: 70px !important;
+}
+
+@media screen and (max-width: 960px) {
+  .productTitleMargin {
+    margin-bottom: 0 !important;
+  }
+}
+
+.fa-circle {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.logoFitter {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.awardDescription {
+  padding: 0 10px;
+}
+
+.navbar-toggler-icon {
+  display: none; /* Hide the element by default */
+}
+
+/* Media query for devices with a maximum width of 1024px (laptops) */
+@media (max-width: 1024px) {
+  .navbar-toggler-icon {
+    display: inline-block; /* Display the element for non-laptop devices */
+  }
+}
+
+.empty-div {
+  position: relative !important;
+  top: -110px;
+}
+
+.empty-div-solution {
+  position: relative !important;
+  top: -200px;
+}
+
+.empty-div-solution-in {
+  position: relative !important;
+  top: -100px;
+}
+
+.empty-div-about {
+  position: relative !important;
+  top: -205px;
+}
+
+.empty-div-product {
+  position: relative !important;
+  top: -180px;
+}
+
+.empty-div-product-in {
+  position: relative !important;
+  top: -80px;
+}
+
+.empty-div-pricing {
+  position: relative !important;
+  top: -130px;
+}
+
+.empty-div-pricing-in {
+  position: relative !important;
+  top: -30px;
+}
+
+.empty-div-problem {
+  position: relative !important;
+  top: -190px;
+}
+
+.empty-div-problem-in {
+  position: relative !important;
+  top: -90px;
+}
+
+.empty-div-supporters {
+  position: relative !important;
+  top: -150px;
+}
+
+.empty-div-supporters-in {
+  position: relative !important;
+  top: -50px;
+}
+
+.empty-div-contact {
+  position: relative !important;
+  top: -215px;
+}
+
+.empty-div-contact-in {
+  position: relative !important;
+  top: -115px;
+}
+
+.empty-div-awards {
+  position: relative !important;
+  top: -200px;
+}
+
+.empty-div-awards-in {
+  position: relative !important;
+  top: -100px;
+}
+
+.contrailDescription {
+  margin-top: 0px !important;
+  text-align: justify;
+}
+
+.buttonCenter{
+  display: grid; 
+  place-items: center;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 39.79%; /* (764 / 1920) * 100 */
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
